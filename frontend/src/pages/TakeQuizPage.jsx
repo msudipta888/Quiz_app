@@ -67,7 +67,7 @@ const TakeQuizPage = () => {
                 totalQuestions: quiz.questions.length
             };
 
-            const response = await axios.post('http://localhost:5000/api/results', resultData);
+            const response = await axios.post('https://quiz-app-aegy.onrender.com/api/results', resultData);
             navigate('/result', { state: { resultId: response.data._id } });
         } catch (error) {
             console.error('Error submitting quiz:', error);
