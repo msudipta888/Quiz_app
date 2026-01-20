@@ -34,7 +34,7 @@ const CreateQuizPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/quizzes', {
+            await axios.post('https://quiz-app-aegy.onrender.com/api/quizzes', {
                 title,
                 description,
                 questions

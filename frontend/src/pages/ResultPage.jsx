@@ -13,7 +13,7 @@ const ResultPage = () => {
         const fetchResult = async () => {
             if (!resultId) return;
             try {
-                const response = await axios.get(`http://localhost:5000/api/results/${resultId}`);
+                const response = await axios.get(`https://quiz-app-aegy.onrender.com/api/results/${resultId}`);
                 setResult(response.data);
             } catch (error) {
                 console.error('Error fetching result:', error);
